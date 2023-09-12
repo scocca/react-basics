@@ -1,0 +1,75 @@
+body{
+    background-image: url('https://img.freepik.com/free-photo/abstract-futuristic-background-with-3d-design_1361-3532.jpg?w=1380&t=st=1686982703~exp=1686983303~hmac=e92c0f5e301e49c0e53baee916040a4be1364cac2f4c7fd4921df68f88164cbf');
+    overflow: hidden;
+    background-attachment: fixed;
+  }
+
+.root{
+    display:flex;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 20px;
+    margin:0;
+    padding: 20px;
+    
+    }
+
+.create{
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:  #009485a6;
+  border-radius: 18px;
+  width:30%;
+  height: 90vh;
+}
+
+
+.list{
+  display: flex;
+  flex:auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: #009485a6;
+  border-radius: 18px;
+  height: 90vh;
+  width: 100%;
+}
+
+@media (max-width:640px){
+  body{
+    overflow-y: scroll;
+    background-position: center;
+  }
+  ::-webkit-scrollbar{
+    background-color: #009485;
+    border-radius: 16px;
+  }
+  ::-webkit-scrollbar-track{
+    border-radius: 16px;
+    background-color: #00c753;
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 16px;
+    background-color: #008a7c;
+    background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
+  }
+  
+  .root{
+    flex-direction: column;
+    }
+
+  .create{
+    width: 100%;
+    height: 640px;
+  }
+
+  .list{
+    height: 640px;
+  }
+}
+
+
+

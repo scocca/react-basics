@@ -1,0 +1,117 @@
+
+#ToDoCounter{
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: bisque;
+  margin: 18px;
+  text-align: center;
+}
+
+#task{
+  display: flex;
+  list-style: none;
+  padding: 12px;
+  font-family: 'Lato', sans-serif;
+  width: 90%;
+  border-radius: 12px;
+  margin: 12px 0 12px 0;
+  background: #00c753a6;
+  color: aliceblue;
+  font-weight: 700;
+  justify-content: space-between;
+  align-items: center;
+}
+#task:hover{
+  transform: scale(1.09);
+  transition: 0.8s ease;
+}
+
+.lister{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 12px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: 75%;
+  width: 85%;
+  border-radius: 12px 8px 8px 12px;
+  background-color: rgba(255, 255, 255, 0.315);
+}
+
+.lister:hover{
+  transform: scale(1.09);
+  transition: 0.8s ease;
+}
+
+#delete{
+  margin: 16px;
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+  justify-content: center;
+  justify-items: center;
+}
+
+#delete:hover{
+  cursor: pointer;
+  font-size: 2rem;
+  transform: rotate(360deg);
+  transform-origin: 25% 25% 0;
+  transition: 0.5s ease;
+}
+
+#check{
+  margin: 16px;
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+  justify-content: center;
+  justify-items: center;
+}
+
+#check:hover{
+  font-size: 2rem;
+  transform-origin: 25% 25% 0;
+  transition: 0.5s ease;
+}
+
+#prop{
+  padding: 12px !important;
+  margin: 6px !important;
+  text-justify: distribute-all-lines !important;
+}
+
+.material-symbols-rounded:hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar{
+  background-color: #009485;
+  border-radius: 16px;
+}
+::-webkit-scrollbar-track{
+  border-radius: 16px;
+  background-color: #00c753;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 16px;
+  background-color: #008a7c;
+  background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
+}
+
+@media (max-width:640px){
+#task:hover{
+  transform: none;
+  transition: none;
+}
+
+.lister:hover{
+  transform: none;
+  transition: none;
+}
+}
